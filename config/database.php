@@ -16,11 +16,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
-    'default' => env('DB_CONNECTION', 'mysql'),
-=======
     'default' => env('DB_CONNECTION', $DB_CONNECTION),
->>>>>>> Dynamic database config
 
     /*
     |--------------------------------------------------------------------------
