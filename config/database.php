@@ -1,6 +1,7 @@
 <?php
 
 $DATABASE_URL = parse_url(getenv("DATABASE_URL"));
+$DB_CONNECTION = parse_url(getenv("DB_CONNECTION"));
 
 return [
 
@@ -15,7 +16,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'default' => env('DB_CONNECTION', 'mysql'),
+=======
+    'default' => env('DB_CONNECTION', $DB_CONNECTION),
+>>>>>>> Dynamic database config
 
     /*
     |--------------------------------------------------------------------------
